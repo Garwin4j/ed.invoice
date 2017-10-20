@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.api", "ed.invoice.api\ed.invoice.api.csproj", "{2CDA150D-104E-46AA-A5C2-924AA803EEB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ed.invoice.api", "ed.invoice.api\ed.invoice.api.csproj", "{2CDA150D-104E-46AA-A5C2-924AA803EEB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.core", "ed.invoice.core\ed.invoice.core.csproj", "{CF7E85EB-FB96-49E7-9C89-6E0B8D0188C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ed.invoice.core", "ed.invoice.core\ed.invoice.core.csproj", "{CF7E85EB-FB96-49E7-9C89-6E0B8D0188C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.domain", "ed.invoice.domain\ed.invoice.domain.csproj", "{1F5A6B8F-5F45-40E7-9172-0C27DBE0C1EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ed.invoice.domain", "ed.invoice.domain\ed.invoice.domain.csproj", "{1F5A6B8F-5F45-40E7-9172-0C27DBE0C1EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.application", "ed.invoice.application\ed.invoice.application.csproj", "{80B7EA75-E5E9-4DC4-94E6-AB3390D05F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ed.invoice.application", "ed.invoice.application\ed.invoice.application.csproj", "{80B7EA75-E5E9-4DC4-94E6-AB3390D05F6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ed.invoice.infrastructure", "ed.invoice.infrastructure\ed.invoice.infrastructure.csproj", "{5454C7C6-A2FF-4DB4-A5C0-4359752923E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.infrastructure.test", "ed.invoice.infrastructure.test\ed.invoice.infrastructure.test.csproj", "{ED937AD8-9049-4D37-BA8A-312F509A67B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ed.invoice.application.test", "ed.invoice.application.test\ed.invoice.application.test.csproj", "{E53AAADE-28E5-4730-8FAF-6DCD1CDBD447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{80B7EA75-E5E9-4DC4-94E6-AB3390D05F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80B7EA75-E5E9-4DC4-94E6-AB3390D05F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80B7EA75-E5E9-4DC4-94E6-AB3390D05F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5454C7C6-A2FF-4DB4-A5C0-4359752923E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5454C7C6-A2FF-4DB4-A5C0-4359752923E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5454C7C6-A2FF-4DB4-A5C0-4359752923E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5454C7C6-A2FF-4DB4-A5C0-4359752923E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED937AD8-9049-4D37-BA8A-312F509A67B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED937AD8-9049-4D37-BA8A-312F509A67B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED937AD8-9049-4D37-BA8A-312F509A67B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED937AD8-9049-4D37-BA8A-312F509A67B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53AAADE-28E5-4730-8FAF-6DCD1CDBD447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53AAADE-28E5-4730-8FAF-6DCD1CDBD447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53AAADE-28E5-4730-8FAF-6DCD1CDBD447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53AAADE-28E5-4730-8FAF-6DCD1CDBD447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

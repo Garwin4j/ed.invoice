@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.0.11" />
+    <PackageReference Include="xunit" Version="2.3.0" />
+    <PackageReference Include="xunit.analyzers" Version="0.7.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ed.invoice.application\ed.invoice.application.csproj" />
+    <ProjectReference Include="..\ed.invoice.core\ed.invoice.core.csproj" />
+    <ProjectReference Include="..\ed.invoice.domain\ed.invoice.domain.csproj" />
+    <ProjectReference Include="..\ed.invoice.infrastructure\ed.invoice.infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
