@@ -4,24 +4,26 @@ using System.Linq;
 using System.Text;
 using ed.invoice.domain;
 using MongoDB.Driver;
+using System.Configuration;
+using MongoRepository;
+using Microsoft.Extensions.Configuration;
+
 
 namespace ed.invoice.infrastructure.data
 {
     public class MongoDataService : IDataService
     {
-        MongoDB.Driver.IMongoClient client;
 
-        public MongoDataService()
+        public MongoDataService(IConfigurationRoot configuration)
         {
-            // MongoClientSettings.FromUrl)
-            client = new MongoClient("mongodb://localhost:27017");
-            var database = client.GetDatabase("eos_invoice");
-
-            this.Customers = database.GetCollection<Customer>(nameof( Customer) ).AsQueryable();
-            this.Items = database.GetCollection<Item>(nameof( Item) ).AsQueryable();
+            var connectionUrlString = configuration["MongoSettings:ConnectionString"];
+            var connectionUrl = new MongoUrl(connectionUrlString);
+            this.Customers = new MongoRepository<Customer>(connectionUrl);
+            this.Items = new MongoRepository<Item>(connectionUrl);
         }
-        public IQueryable<Customer> Customers { get; private set; }
 
-        public IQueryable<Item> Items { get; private set; }
+        public IRepository<Customer> Customers { get; private set; }
+
+        public IRepository<Item> Items { get; private set; }
     }
 }

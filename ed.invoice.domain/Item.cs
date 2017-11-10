@@ -1,6 +1,8 @@
-﻿namespace ed.invoice.domain
+﻿using MongoRepository;
+
+namespace ed.invoice.domain
 {
-    public class Item : DomainBase
+    public class Item : Entity
     {
         public Item()
         {
